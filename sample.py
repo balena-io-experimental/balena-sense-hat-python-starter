@@ -3,8 +3,10 @@ import time
 
 sense = SenseHat()
 
-sense.clear()
-sense.load_image("img/balena.png")
-time.sleep(2)
-sense.show_message("balena")
-sense.clear()
+while True:
+    sense.clear()
+    sense.load_image("img/balena.png")
+    time.sleep(10)
+    sense.show_message("balena")
+    time.sleep(10)
+    sense.clear()
