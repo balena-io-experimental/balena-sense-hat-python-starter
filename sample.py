@@ -4,7 +4,6 @@ import time
 sense = SenseHat()
 
 while True:
-    sense.clear()
     sense.load_image("img/balena.png")
     time.sleep(10)
     sense.show_message("balena")
